@@ -1,0 +1,65 @@
+{
+    "comments": [
+        {
+            "id": 1,
+            "user_name": "Yana Csist",
+
+            "user_comment": "12 hours ago"
+
+        },
+        {
+            "id": 2,
+            "user_name": "Soso Bibe",
+
+            "user_comment": "14 hours ago"
+        },
+        {
+            "id": 3,
+            "user_name": "Lena Golovach",
+
+            "user_comment": "6 hours ago"
+        },
+        {
+            "id": 4,
+            "user_name": "Oleksandr ",
+
+            "user_comment": "19 hours ago"
+        }
+
+    ],
+
+  "chat": [
+    {
+      "id": 1,
+      "user_name": "Yana Csist",
+
+      "user_comment": "hey, man!"
+
+
+    },
+    {
+      "id": 2,
+      "user_name": "Lena Golovach",
+
+      "user_comment": "what are you doing?"
+
+    },
+    {
+      "id": 3,
+      "user_name": "Oleksandr",
+
+      "user_comment": "wtf???"
+
+
+    },
+    {
+      "id": 4,
+      "user_name": "Oleksandr",
+
+      "user_comment": "give me my money, nigga"
+
+    }
+
+  ]
+}
+

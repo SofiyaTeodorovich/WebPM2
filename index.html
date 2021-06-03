@@ -1,0 +1,1439 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/semantic.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/icon.min.css"
+          integrity="sha512-8Tb+T7SKUFQWOPIQCaLDWWe1K/SY8hvHl7brOH8Nz5z1VT8fnf8B+9neoUzmFY3OzkWMMs3OjrwZALgB1oXFBg=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet/less" type="text/less" href="css/mail.less" />
+    <script src="js/less.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+
+<div class="ui inverted menu top fixed headera">
+    <div class="d-flex align-items-center">
+        <div class="bog">
+            <div class="log">
+                <img src="Logotype.png" alt="">
+            </div>
+            <a href="#" class="item launch button">
+                <i class="content icon"></i>
+            </a>
+        </div>
+
+        <div class="ui icon input dich">
+            <input type="text" placeholder="Search...">
+            <i class="search icon"></i>
+        </div>
+    </div>
+    <div class="d-flex ss">
+        <a href="#" class="item"><i class="cog icon"></i></a>
+        <a href="#" class="item"><i class="bell outline icon"></i></a>
+        <div class="ui dropdown item">
+            <i class="lock icon"></i>
+            <div class="menu">
+                <a class="item" href="#">Link Item</a>
+                <a class="item" href="#">Link Item</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="ui bottom attached segment">
+    <div class="ui vertical menu sidebar hidden" style="background: #1b2133;">
+        <div class=" menu">
+            <div class="ui dropdown item d-flex align-items-center spo">
+                <img class="ui avatar image" src="https://semantic-ui.com/images/avatar/small/jenny.jpg">
+                <span class="fofof">
+                    Unggul Hasan
+                </span>
+
+            </div>
+        </div>
+        <div class="divider"></div>
+        <ul class="men">
+            <li><a href="#">
+                <i class="comment outline icon"></i>
+                Home
+            </a></li>
+            <li><a href="#"> <i class="thumbs down outline icon"></i>
+                Projects
+            </a></li>
+            <li><a href="#"> <i class="comment outline icon"></i>
+                Messages
+            </a></li>
+            <li><a href="#"> <i class="frown outline icon"></i>
+                Analytics
+            </a></li>
+            <li><a href="#"> <i class="tasks icon"></i>
+                Tasks
+            </a></li>
+            <li><a href="#"> <i class="calendar outline icon"></i>
+                Calendar
+            </a></li>
+            <li><a href="#"> <i class="th large icon"></i>
+                Layots
+            </a></li>
+            <li><a href="#"> <i class="blind icon"></i>
+                Accounts
+            </a></li>
+        </ul>
+    </div>
+
+    <div style="
+    background: #e4ebf7;
+" class="ui pusher">
+        <div class="ui grid container">
+            <div class="sixteen wide column">
+                <div style="    margin: 30px 0 0" class="card">
+                    <div class="card_head">
+                        <h4>
+                            Project Activity
+                        </h4>
+                        <div class="d-flex align-items-center">
+                            <i class="minus icon"></i>
+                            <i class="x icon icon"></i>
+                        </div>
+                    </div>
+                    <!-- Styles -->
+                    <style>
+                        #chartdiv {
+                            width: 100%;
+                            height: 500px;
+                        }
+
+                    </style>
+
+                    <!-- Resources -->
+                    <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+                    <script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+                    <script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+
+                    <!-- Chart code -->
+                    <script>
+                        am4core.ready(function () {
+
+// Themes begin
+                            am4core.useTheme(am4themes_animated);
+// Themes end
+
+                            var chart = am4core.create("chartdiv", am4charts.XYChart);
+
+                            chart.data = [{
+                                "year": "1994",
+                                "cars": 1587,
+                                "motorcycles": 650,
+                                "bicycles": 121
+                            }, {
+                                "year": "1995",
+                                "cars": 1567,
+                                "motorcycles": 683,
+                                "bicycles": 146
+                            }, {
+                                "year": "1996",
+                                "cars": 1617,
+                                "motorcycles": 691,
+                                "bicycles": 138
+                            }, {
+                                "year": "1997",
+                                "cars": 1630,
+                                "motorcycles": 642,
+                                "bicycles": 127
+                            }, {
+                                "year": "1998",
+                                "cars": 1660,
+                                "motorcycles": 699,
+                                "bicycles": 105
+                            }, {
+                                "year": "1999",
+                                "cars": 1683,
+                                "motorcycles": 721,
+                                "bicycles": 109
+                            }, {
+                                "year": "2000",
+                                "cars": 1691,
+                                "motorcycles": 737,
+                                "bicycles": 112
+                            }, {
+                                "year": "2001",
+                                "cars": 1298,
+                                "motorcycles": 680,
+                                "bicycles": 101
+                            }, {
+                                "year": "2002",
+                                "cars": 1275,
+                                "motorcycles": 664,
+                                "bicycles": 97
+                            }, {
+                                "year": "2003",
+                                "cars": 1246,
+                                "motorcycles": 648,
+                                "bicycles": 93
+                            }, {
+                                "year": "2004",
+                                "cars": 1318,
+                                "motorcycles": 697,
+                                "bicycles": 111
+                            }, {
+                                "year": "2005",
+                                "cars": 1213,
+                                "motorcycles": 633,
+                                "bicycles": 87
+                            }, {
+                                "year": "2006",
+                                "cars": 1199,
+                                "motorcycles": 621,
+                                "bicycles": 79
+                            }, {
+                                "year": "2007",
+                                "cars": 1110,
+                                "motorcycles": 210,
+                                "bicycles": 81
+                            }, {
+                                "year": "2008",
+                                "cars": 1165,
+                                "motorcycles": 232,
+                                "bicycles": 75
+                            }, {
+                                "year": "2009",
+                                "cars": 1145,
+                                "motorcycles": 219,
+                                "bicycles": 88
+                            }, {
+                                "year": "2010",
+                                "cars": 1163,
+                                "motorcycles": 201,
+                                "bicycles": 82
+                            }, {
+                                "year": "2011",
+                                "cars": 1180,
+                                "motorcycles": 285,
+                                "bicycles": 87
+                            }, {
+                                "year": "2012",
+                                "cars": 1159,
+                                "motorcycles": 277,
+                                "bicycles": 71
+                            }];
+
+                            chart.dateFormatter.inputDateFormat = "yyyy";
+                            var dateAxis = chart.xAxes.push(new am4charts.DateAxis());
+                            dateAxis.renderer.minGridDistance = 60;
+                            dateAxis.startLocation = 0.5;
+                            dateAxis.endLocation = 0.5;
+                            dateAxis.baseInterval = {
+                                timeUnit: "year",
+                                count: 1
+                            }
+
+                            var valueAxis = chart.yAxes.push(new am4charts.ValueAxis());
+                            valueAxis.tooltip.disabled = true;
+
+                            var series = chart.series.push(new am4charts.LineSeries());
+                            series.dataFields.dateX = "year";
+                            series.name = "cars";
+                            series.dataFields.valueY = "cars";
+                            series.tooltipHTML = "<img src='https://www.amcharts.com/lib/3/images/car.png' style='vertical-align:bottom; margin-right: 10px; width:28px; height:21px;'><span style='font-size:14px; color:#000000;'><b>{valueY.value}</b></span>";
+                            series.tooltipText = "[#000]{valueY.value}[/]";
+                            series.tooltip.background.fill = am4core.color("#FFF");
+                            series.tooltip.getStrokeFromObject = true;
+                            series.tooltip.background.strokeWidth = 3;
+                            series.tooltip.getFillFromObject = false;
+                            series.fillOpacity = 0.6;
+                            series.strokeWidth = 2;
+                            series.stacked = true;
+
+                            var series2 = chart.series.push(new am4charts.LineSeries());
+                            series2.name = "motorcycles";
+                            series2.dataFields.dateX = "year";
+                            series2.dataFields.valueY = "motorcycles";
+                            series2.tooltipHTML = "<img src='https://www.amcharts.com/lib/3/images/motorcycle.png' style='vertical-align:bottom; margin-right: 10px; width:28px; height:21px;'><span style='font-size:14px; color:#000000;'><b>{valueY.value}</b></span>";
+                            series2.tooltipText = "[#000]{valueY.value}[/]";
+                            series2.tooltip.background.fill = am4core.color("#FFF");
+                            series2.tooltip.getFillFromObject = false;
+                            series2.tooltip.getStrokeFromObject = true;
+                            series2.tooltip.background.strokeWidth = 3;
+                            series2.sequencedInterpolation = true;
+                            series2.fillOpacity = 0.6;
+                            series2.stacked = true;
+                            series2.strokeWidth = 2;
+
+                            var series3 = chart.series.push(new am4charts.LineSeries());
+                            series3.name = "bicycles";
+                            series3.dataFields.dateX = "year";
+                            series3.dataFields.valueY = "bicycles";
+                            series3.tooltipHTML = "<img src='https://www.amcharts.com/lib/3/images/bicycle.png' style='vertical-align:bottom; margin-right: 10px; width:28px; height:21px;'><span style='font-size:14px; color:#000000;'><b>{valueY.value}</b></span>";
+                            series3.tooltipText = "[#000]{valueY.value}[/]";
+                            series3.tooltip.background.fill = am4core.color("#FFF");
+                            series3.tooltip.getFillFromObject = false;
+                            series3.tooltip.getStrokeFromObject = true;
+                            series3.tooltip.background.strokeWidth = 3;
+                            series3.sequencedInterpolation = true;
+                            series3.fillOpacity = 0.6;
+                            series3.defaultState.transitionDuration = 1000;
+                            series3.stacked = true;
+                            series3.strokeWidth = 2;
+
+                            chart.cursor = new am4charts.XYCursor();
+                            chart.cursor.xAxis = dateAxis;
+                            chart.scrollbarX = new am4core.Scrollbar();
+
+// Add a legend
+                            chart.legend = new am4charts.Legend();
+                            chart.legend.position = "top";
+
+// axis ranges
+                            var range = dateAxis.axisRanges.create();
+                            range.date = new Date(2001, 0, 1);
+                            range.endDate = new Date(2003, 0, 1);
+                            range.axisFill.fill = chart.colors.getIndex(7);
+                            range.axisFill.fillOpacity = 0.2;
+
+                            range.label.text = "Fines for speeding increased";
+                            range.label.inside = true;
+                            range.label.rotation = 90;
+                            range.label.horizontalCenter = "right";
+                            range.label.verticalCenter = "bottom";
+
+                            var range2 = dateAxis.axisRanges.create();
+                            range2.date = new Date(2007, 0, 1);
+                            range2.grid.stroke = chart.colors.getIndex(7);
+                            range2.grid.strokeOpacity = 0.6;
+                            range2.grid.strokeDasharray = "5,2";
+
+
+                            range2.label.text = "Motorcycle fee introduced";
+                            range2.label.inside = true;
+                            range2.label.rotation = 90;
+                            range2.label.horizontalCenter = "right";
+                            range2.label.verticalCenter = "bottom";
+
+                        }); // end am4core.ready()
+                    </script>
+
+                    <!-- HTML -->
+                    <div id="chartdiv"></div>
+                </div>
+            </div>
+
+            <div class="four wide column">
+                <div class="card">
+                    <div class="card_head">
+                        <h4>
+                            Involved Team
+                        </h4>
+                        <div class="d-flex align-items-center">
+                            <i class="minus icon"></i>
+                            <i class="x icon icon"></i>
+                        </div>
+                    </div>
+                    <div class="media-group-col">
+                        <ul>
+                            <li>
+                                <div class="profile-pic">
+                                    <img src="http://envato.rathemes.com/infinity/assets/images/220.jpg" alt="" />
+                                </div>
+                                <div class="profile-disc">
+                                    <h4>John Doe</h4>
+                                    <p>Software Engineer</p>
+                                </div>
+                                <div class="clearfix"></div>
+                            </li>
+                            <li>
+                                <div class="profile-pic">
+                                    <img src="http://envato.rathemes.com/infinity/assets/images/220.jpg" alt="" />
+                                </div>
+                                <div class="profile-disc">
+                                    <h4>John Doe</h4>
+                                    <p>Software Engineer</p>
+                                </div>
+                                <div class="clearfix"></div>
+                            </li>
+                            <li>
+                                <div class="profile-pic">
+                                    <img src="http://envato.rathemes.com/infinity/assets/images/220.jpg" alt="" />
+                                </div>
+                                <div class="profile-disc">
+                                    <h4>John Doe</h4>
+                                    <p>Software Engineer</p>
+                                </div>
+                                <div class="clearfix"></div>
+                            </li>
+                            <li>
+                                <div class="profile-pic">
+                                    <img src="http://envato.rathemes.com/infinity/assets/images/220.jpg" alt="" />
+                                </div>
+                                <div class="profile-disc">
+                                    <h4>John Doe</h4>
+                                    <p>Software Engineer</p>
+                                </div>
+                                <div class="clearfix"></div>
+                            </li>
+                            <li>
+                                <div class="profile-pic">
+                                    <img src="http://envato.rathemes.com/infinity/assets/images/220.jpg" alt="" />
+                                </div>
+                                <div class="profile-disc">
+                                    <h4>John Doe</h4>
+                                    <p>Software Engineer</p>
+                                </div>
+                                <div class="clearfix"></div>
+                            </li>
+                            <li>
+                                <div class="profile-pic">
+                                    <img src="http://envato.rathemes.com/infinity/assets/images/220.jpg" alt="" />
+                                </div>
+                                <div class="profile-disc">
+                                    <h4>John Doe</h4>
+                                    <p>Software Engineer</p>
+                                </div>
+                                <div class="clearfix"></div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="twelve wide column">
+               <div class="card">
+                   <div class="card_head">
+                       <h4>
+                           Mangers Activity
+                       </h4>
+                       <div class="d-flex align-items-center">
+                           <i class="minus icon"></i>
+                           <i class="x icon icon"></i>
+                       </div>
+                   </div>
+                   <style>
+                       #chartdivka {
+                           width: 100%;
+                           height: 475px;
+                       }
+                   </style>
+
+                   <!-- Resources -->
+
+
+                   <!-- Chart code -->
+                   <script>
+                       am4core.ready(function () {
+
+// Themes begin
+                           am4core.useTheme(am4themes_animated);
+// Themes end
+
+                           var chart = am4core.create("chartdivka", am4charts.XYChart);
+
+// some extra padding for range labels
+                           chart.paddingBottom = 50;
+
+                           chart.cursor = new am4charts.XYCursor();
+                           chart.scrollbarX = new am4core.Scrollbar();
+
+// will use this to store colors of the same items
+                           var colors = {};
+
+                           var categoryAxis = chart.xAxes.push(new am4charts.CategoryAxis());
+                           categoryAxis.dataFields.category = "category";
+                           categoryAxis.renderer.minGridDistance = 60;
+                           categoryAxis.renderer.grid.template.location = 0;
+                           categoryAxis.dataItems.template.text = "{realName}";
+                           categoryAxis.adapter.add("tooltipText", function (tooltipText, target) {
+                               return categoryAxis.tooltipDataItem.dataContext.realName;
+                           })
+
+                           var valueAxis = chart.yAxes.push(new am4charts.ValueAxis());
+                           valueAxis.tooltip.disabled = true;
+                           valueAxis.min = 0;
+
+// single column series for all data
+                           var columnSeries = chart.series.push(new am4charts.ColumnSeries());
+                           columnSeries.columns.template.width = am4core.percent(80);
+                           columnSeries.tooltipText = "{provider}: {realName}, {valueY}";
+                           columnSeries.dataFields.categoryX = "category";
+                           columnSeries.dataFields.valueY = "value";
+
+// second value axis for quantity
+                           var valueAxis2 = chart.yAxes.push(new am4charts.ValueAxis());
+                           valueAxis2.renderer.opposite = true;
+                           valueAxis2.syncWithAxis = valueAxis;
+                           valueAxis2.tooltip.disabled = true;
+
+// quantity line series
+                           var lineSeries = chart.series.push(new am4charts.LineSeries());
+                           lineSeries.tooltipText = "{valueY}";
+                           lineSeries.dataFields.categoryX = "category";
+                           lineSeries.dataFields.valueY = "quantity";
+                           lineSeries.yAxis = valueAxis2;
+                           lineSeries.bullets.push(new am4charts.CircleBullet());
+                           lineSeries.stroke = chart.colors.getIndex(13);
+                           lineSeries.fill = lineSeries.stroke;
+                           lineSeries.strokeWidth = 2;
+                           lineSeries.snapTooltip = true;
+
+// when data validated, adjust location of data item based on count
+                           lineSeries.events.on("datavalidated", function () {
+                               lineSeries.dataItems.each(function (dataItem) {
+                                   // if count divides by two, location is 0 (on the grid)
+                                   if (dataItem.dataContext.count / 2 == Math.round(dataItem.dataContext.count / 2)) {
+                                       dataItem.setLocation("categoryX", 0);
+                                   }
+                                   // otherwise location is 0.5 (middle)
+                                   else {
+                                       dataItem.setLocation("categoryX", 0.5);
+                                   }
+                               })
+                           })
+
+// fill adapter, here we save color value to colors object so that each time the item has the same name, the same color is used
+                           columnSeries.columns.template.adapter.add("fill", function (fill, target) {
+                               var name = target.dataItem.dataContext.realName;
+                               if (!colors[name]) {
+                                   colors[name] = chart.colors.next();
+                               }
+                               target.stroke = colors[name];
+                               return colors[name];
+                           })
+
+
+                           var rangeTemplate = categoryAxis.axisRanges.template;
+                           rangeTemplate.tick.disabled = false;
+                           rangeTemplate.tick.location = 0;
+                           rangeTemplate.tick.strokeOpacity = 0.6;
+                           rangeTemplate.tick.length = 60;
+                           rangeTemplate.grid.strokeOpacity = 0.5;
+                           rangeTemplate.label.tooltip = new am4core.Tooltip();
+                           rangeTemplate.label.tooltip.dy = -10;
+                           rangeTemplate.label.cloneTooltip = false;
+
+///// DATA
+                           var chartData = [];
+                           var lineSeriesData = [];
+
+                           var data =
+                               {
+                                   "Provider 1": {
+                                       "item 1": 10,
+                                       "item 2": 35,
+                                       "item 3": 5,
+                                       "item 4": 20,
+                                       "quantity": 430
+                                   },
+                                   "Provider 2": {
+                                       "item 1": 15,
+                                       "item 3": 21,
+                                       "quantity": 210
+                                   },
+                                   "Provider 3": {
+                                       "item 2": 25,
+                                       "item 3": 11,
+                                       "item 4": 17,
+                                       "quantity": 265
+                                   },
+                                   "Provider 4": {
+                                       "item 3": 12,
+                                       "item 4": 15,
+                                       "quantity": 98
+                                   }
+                               }
+
+// process data ant prepare it for the chart
+                           for (var providerName in data) {
+                               var providerData = data[providerName];
+
+                               // add data of one provider to temp array
+                               var tempArray = [];
+                               var count = 0;
+                               // add items
+                               for (var itemName in providerData) {
+                                   if (itemName != "quantity") {
+                                       count++;
+                                       // we generate unique category for each column (providerName + "_" + itemName) and store realName
+                                       tempArray.push({
+                                           category: providerName + "_" + itemName,
+                                           realName: itemName,
+                                           value: providerData[itemName],
+                                           provider: providerName
+                                       })
+                                   }
+                               }
+                               // sort temp array
+                               tempArray.sort(function (a, b) {
+                                   if (a.value > b.value) {
+                                       return 1;
+                                   } else if (a.value < b.value) {
+                                       return -1
+                                   } else {
+                                       return 0;
+                                   }
+                               })
+
+                               // add quantity and count to middle data item (line series uses it)
+                               var lineSeriesDataIndex = Math.floor(count / 2);
+                               tempArray[lineSeriesDataIndex].quantity = providerData.quantity;
+                               tempArray[lineSeriesDataIndex].count = count;
+                               // push to the final data
+                               am4core.array.each(tempArray, function (item) {
+                                   chartData.push(item);
+                               })
+
+                               // create range (the additional label at the bottom)
+                               var range = categoryAxis.axisRanges.create();
+                               range.category = tempArray[0].category;
+                               range.endCategory = tempArray[tempArray.length - 1].category;
+                               range.label.text = tempArray[0].provider;
+                               range.label.dy = 30;
+                               range.label.truncate = true;
+                               range.label.fontWeight = "bold";
+                               range.label.tooltipText = tempArray[0].provider;
+
+                               range.label.adapter.add("maxWidth", function (maxWidth, target) {
+                                   var range = target.dataItem;
+                                   var startPosition = categoryAxis.categoryToPosition(range.category, 0);
+                                   var endPosition = categoryAxis.categoryToPosition(range.endCategory, 1);
+                                   var startX = categoryAxis.positionToCoordinate(startPosition);
+                                   var endX = categoryAxis.positionToCoordinate(endPosition);
+                                   return endX - startX;
+                               })
+                           }
+
+                           chart.data = chartData;
+
+
+// last tick
+                           var range = categoryAxis.axisRanges.create();
+                           range.category = chart.data[chart.data.length - 1].category;
+                           range.label.disabled = true;
+                           range.tick.location = 1;
+                           range.grid.location = 1;
+
+                       }); // end am4core.ready()
+                   </script>
+                   <div id="chartdivka"></div>
+               </div>
+            </div>
+            <div class="ten wide column">
+                <div class="card">
+                    <div class="card_head">
+                        <h4>
+                            Mangers Activity
+                        </h4>
+                        <div class="d-flex align-items-center">
+                            <i class="minus icon"></i>
+                            <i class="x icon icon"></i>
+                        </div>
+                    </div>
+                    <style>
+                        #chartdivs {
+                            width: 100%;
+                            height: 500px;
+                        }
+                    </style>
+
+                    <!-- Resources -->
+                    <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+                    <script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+                    <script src="https://cdn.amcharts.com/lib/4/themes/material.js"></script>
+                    <script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+
+                    <!-- Chart code -->
+                    <script>
+                        am4core.ready(function() {
+
+// Themes begin
+                            am4core.useTheme(am4themes_material);
+                            am4core.useTheme(am4themes_animated);
+// Themes end
+
+                            var data = [{
+                                "country": "Dummy",
+                                "disabled": true,
+                                "litres": 1000,
+                                "color": am4core.color("#dadada"),
+                                "opacity": 0.3,
+                                "strokeDasharray": "4,4"
+                            }, {
+                                "country": "Lithuania",
+                                "litres": 501.9
+                            }, {
+                                "country": "Estonia",
+                                "litres": 301.9
+                            }, {
+                                "country": "Ireland",
+                                "litres": 201.1
+                            }, {
+                                "country": "Germany",
+                                "litres": 165.8
+                            }, {
+                                "country": "Australia",
+                                "litres": 139.9
+                            }, {
+                                "country": "Austria",
+                                "litres": 128.3
+                            }];
+
+
+// cointainer to hold both charts
+                            var container = am4core.create("chartdivs", am4core.Container);
+                            container.width = am4core.percent(100);
+                            container.height = am4core.percent(100);
+                            container.layout = "horizontal";
+
+                            container.events.on("maxsizechanged", function () {
+                                chart1.zIndex = 0;
+                                separatorLine.zIndex = 1;
+                                dragText.zIndex = 2;
+                                chart2.zIndex = 3;
+                            })
+
+                            var chart1 = container.createChild(am4charts.PieChart);
+                            chart1 .fontSize = 11;
+                            chart1.hiddenState.properties.opacity = 0; // this makes initial fade in effect
+                            chart1.data = data;
+                            chart1.radius = am4core.percent(70);
+                            chart1.innerRadius = am4core.percent(40);
+                            chart1.zIndex = 1;
+
+                            var series1 = chart1.series.push(new am4charts.PieSeries());
+                            series1.dataFields.value = "litres";
+                            series1.dataFields.category = "country";
+                            series1.colors.step = 2;
+                            series1.alignLabels = false;
+                            series1.labels.template.bent = true;
+                            series1.labels.template.radius = 3;
+                            series1.labels.template.padding(0,0,0,0);
+
+                            var sliceTemplate1 = series1.slices.template;
+                            sliceTemplate1.cornerRadius = 5;
+                            sliceTemplate1.draggable = true;
+                            sliceTemplate1.inert = true;
+                            sliceTemplate1.propertyFields.fill = "color";
+                            sliceTemplate1.propertyFields.fillOpacity = "opacity";
+                            sliceTemplate1.propertyFields.stroke = "color";
+                            sliceTemplate1.propertyFields.strokeDasharray = "strokeDasharray";
+                            sliceTemplate1.strokeWidth = 1;
+                            sliceTemplate1.strokeOpacity = 1;
+
+                            var zIndex = 5;
+
+                            sliceTemplate1.events.on("down", function (event) {
+                                event.target.toFront();
+                                // also put chart to front
+                                var series = event.target.dataItem.component;
+                                series.chart.zIndex = zIndex++;
+                            })
+
+                            series1.ticks.template.disabled = true;
+
+                            sliceTemplate1.states.getKey("active").properties.shiftRadius = 0;
+
+                            sliceTemplate1.events.on("dragstop", function (event) {
+                                handleDragStop(event);
+                            })
+
+// separator line and text
+                            var separatorLine = container.createChild(am4core.Line);
+                            separatorLine.x1 = 0;
+                            separatorLine.y2 = 300;
+                            separatorLine.strokeWidth = 3;
+                            separatorLine.stroke = am4core.color("#dadada");
+                            separatorLine.valign = "middle";
+                            separatorLine.strokeDasharray = "5,5";
+
+
+                            var dragText = container.createChild(am4core.Label);
+                            dragText.text = "Drag slices over the line";
+                            dragText.rotation = 90;
+                            dragText.valign = "middle";
+                            dragText.align = "center";
+                            dragText.paddingBottom = 5;
+
+// second chart
+                            var chart2 = container.createChild(am4charts.PieChart);
+                            chart2.hiddenState.properties.opacity = 0; // this makes initial fade in effect
+                            chart2 .fontSize = 11;
+                            chart2.radius = am4core.percent(70);
+                            chart2.data = data;
+                            chart2.innerRadius = am4core.percent(40);
+                            chart2.zIndex = 1;
+
+                            var series2 = chart2.series.push(new am4charts.PieSeries());
+                            series2.dataFields.value = "litres";
+                            series2.dataFields.category = "country";
+                            series2.colors.step = 2;
+
+                            series2.alignLabels = false;
+                            series2.labels.template.bent = true;
+                            series2.labels.template.radius = 3;
+                            series2.labels.template.padding(0,0,0,0);
+                            series2.labels.template.propertyFields.disabled = "disabled";
+
+                            var sliceTemplate2 = series2.slices.template;
+                            sliceTemplate2.copyFrom(sliceTemplate1);
+
+                            series2.ticks.template.disabled = true;
+
+                            function handleDragStop(event) {
+                                var targetSlice = event.target;
+                                var dataItem1;
+                                var dataItem2;
+                                var slice1;
+                                var slice2;
+
+                                if (series1.slices.indexOf(targetSlice) != -1) {
+                                    slice1 = targetSlice;
+                                    slice2 = series2.dataItems.getIndex(targetSlice.dataItem.index).slice;
+                                }
+                                else if (series2.slices.indexOf(targetSlice) != -1) {
+                                    slice1 = series1.dataItems.getIndex(targetSlice.dataItem.index).slice;
+                                    slice2 = targetSlice;
+                                }
+
+
+                                dataItem1 = slice1.dataItem;
+                                dataItem2 = slice2.dataItem;
+
+                                var series1Center = am4core.utils.spritePointToSvg({ x: 0, y: 0 }, series1.slicesContainer);
+                                var series2Center = am4core.utils.spritePointToSvg({ x: 0, y: 0 }, series2.slicesContainer);
+
+                                var series1CenterConverted = am4core.utils.svgPointToSprite(series1Center, series2.slicesContainer);
+                                var series2CenterConverted = am4core.utils.svgPointToSprite(series2Center, series1.slicesContainer);
+
+                                // tooltipY and tooltipY are in the middle of the slice, so we use them to avoid extra calculations
+                                var targetSlicePoint = am4core.utils.spritePointToSvg({ x: targetSlice.tooltipX, y: targetSlice.tooltipY }, targetSlice);
+
+                                if (targetSlice == slice1) {
+                                    if (targetSlicePoint.x > container.pixelWidth / 2) {
+                                        var value = dataItem1.value;
+
+                                        dataItem1.hide();
+
+                                        var animation = slice1.animate([{ property: "x", to: series2CenterConverted.x }, { property: "y", to: series2CenterConverted.y }], 400);
+                                        animation.events.on("animationprogress", function (event) {
+                                            slice1.hideTooltip();
+                                        })
+
+                                        slice2.x = 0;
+                                        slice2.y = 0;
+
+                                        dataItem2.show();
+                                    }
+                                    else {
+                                        slice1.animate([{ property: "x", to: 0 }, { property: "y", to: 0 }], 400);
+                                    }
+                                }
+                                if (targetSlice == slice2) {
+                                    if (targetSlicePoint.x < container.pixelWidth / 2) {
+
+                                        var value = dataItem2.value;
+
+                                        dataItem2.hide();
+
+                                        var animation = slice2.animate([{ property: "x", to: series1CenterConverted.x }, { property: "y", to: series1CenterConverted.y }], 400);
+                                        animation.events.on("animationprogress", function (event) {
+                                            slice2.hideTooltip();
+                                        })
+
+                                        slice1.x = 0;
+                                        slice1.y = 0;
+                                        dataItem1.show();
+                                    }
+                                    else {
+                                        slice2.animate([{ property: "x", to: 0 }, { property: "y", to: 0 }], 400);
+                                    }
+                                }
+
+                                toggleDummySlice(series1);
+                                toggleDummySlice(series2);
+
+                                series1.hideTooltip();
+                                series2.hideTooltip();
+                            }
+
+                            function toggleDummySlice(series) {
+                                var show = true;
+                                for (var i = 1; i < series.dataItems.length; i++) {
+                                    var dataItem = series.dataItems.getIndex(i);
+                                    if (dataItem.slice.visible && !dataItem.slice.isHiding) {
+                                        show = false;
+                                    }
+                                }
+
+                                var dummySlice = series.dataItems.getIndex(0);
+                                if (show) {
+                                    dummySlice.show();
+                                }
+                                else {
+                                    dummySlice.hide();
+                                }
+                            }
+
+                            series2.events.on("datavalidated", function () {
+
+                                var dummyDataItem = series2.dataItems.getIndex(0);
+                                dummyDataItem.show(0);
+                                dummyDataItem.slice.draggable = false;
+                                dummyDataItem.slice.tooltipText = undefined;
+
+                                for (var i = 1; i < series2.dataItems.length; i++) {
+                                    series2.dataItems.getIndex(i).hide(0);
+                                }
+                            })
+
+                            series1.events.on("datavalidated", function () {
+                                var dummyDataItem = series1.dataItems.getIndex(0);
+                                dummyDataItem.hide(0);
+                                dummyDataItem.slice.draggable = false;
+                                dummyDataItem.slice.tooltipText = undefined;
+                            })
+
+                        }); // end am4core.ready()
+                    </script>
+
+                    <!-- HTML -->
+                    <div id="chartdivs"></div>
+                </div>
+            </div>
+            <div class="six wide column">
+                <div class="card">
+                    <div class="card_head">
+                        <h4>
+                            Chat
+                        </h4>
+                        <div class="d-flex align-items-center">
+                            <i class="minus icon"></i>
+                            <i class="x icon icon"></i>
+                        </div>
+                    </div>
+                    <div id="convo" data-from="Sonu Joshi">
+                        <ul class="chat-thread">
+                            <li>Are we meeting today?</li>
+                            <li>yes, what time suits you?</li>
+                            <li>I was thinking after lunch, I have a meeting in the morning</li>
+                            <li>Are we meeting today?</li>
+                            <li>yes, what time suits you?</li>
+                            <li>I was thinking after lunch, I have a meeting in the morning</li>
+                            <li>Are we meeting today?</li>
+                            <li>yes, what time suits you?</li>
+                            <li>I was thinking after lunch, I have a meeting in the morning</li>
+                            <li>Are we meeting today?</li>
+                            <li>yes, what time suits you?</li>
+                            <li>I was thinking after lunch, I have a meeting in the morning</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <div class="sixteen wide column">
+                <div class="card cha">
+                    <aside id="sidebar" class="nano">
+                        <div class="nano-content">
+                            <div class="logo-container"><span class="logo glyphicon glyphicon-envelope"></span>Mail</div><a class="compose-button">Compose</a>
+                            <menu class="menu-segment">
+                                <ul>
+                                    <li class="active"><a href="#">Inbox<span> (43)</span></a></li>
+                                    <li><a href="#">Important</a></li>
+                                    <li><a href="#">Sent</a></li>
+                                    <li><a href="#">Drafts</a></li>
+                                    <li><a href="#">Trash</a></li>
+                                </ul>
+                            </menu>
+                            <div class="separator"></div>
+                            <div class="menu-segment">
+                                <ul class="labels">
+                                    <li class="title">Labels <span class="icon">+</span></li>
+                                    <li><a href="#">Dribbble <span class="ball pink"></span></a></li>
+                                    <li><a href="#">Roommates <span class="ball green"></span></a></li>
+                                    <li><a href="#">Bills <span class="ball blue"></span></a></li>
+                                </ul>
+                            </div>
+                            <div class="separator"></div>
+                            <div class="menu-segment">
+                                <ul class="chat">
+                                    <li class="title">Chat <span class="icon">+</span></li>
+                                    <li><a href="#"><span class="ball green"></span>Laura Turner</a></li>
+                                    <li><a href="#"><span class="ball green"></span>Kevin Jones</a></li>
+                                    <li><a href="#"><span class="ball blue"></span>John King</a></li>
+                                    <li><a href="#"><span class="ball blue"></span>Jenny Parker</a></li>
+                                    <li><a href="#"><span class="ball blue"></span>Paul Green</a></li>
+                                    <li><a href="#" class="italic-link">See offline list</a></li>
+                                </ul>
+                            </div>
+                            <div class="bottom-padding"></div>
+                        </div>
+                    </aside>
+                    <main id="main">
+                        <div class="overlay"></div>
+                        <header class="header">
+                            <div class="search-box">
+                                <input placeholder="Search..."><span class="icon glyphicon glyphicon-search"></span>
+                            </div>
+                            <h1 class="page-title"><a class="sidebar-toggle-btn trigger-toggle-sidebar"><span class="line"></span><span class="line"></span><span class="line"></span><span class="line line-angle1"></span><span class="line line-angle2"></span></a>Inbox<a><span class="icon glyphicon glyphicon-chevron-down"></span></a></h1>
+                        </header>
+                        <div class="action-bar">
+                            <ul>
+                                <li><a class="icon circle-icon glyphicon glyphicon-chevron-down"></a></li>
+                                <li><a class="icon circle-icon glyphicon glyphicon-refresh"></a></li>
+                                <li><a class="icon circle-icon glyphicon glyphicon-share-alt"></a></li>
+                                <li><a class="icon circle-icon red glyphicon glyphicon-remove"></a></li>
+                                <li><a class="icon circle-icon red glyphicon glyphicon-flag"></a></li>
+                            </ul>
+                        </div>
+                        <div id="main-nano-wrapper" class="nano">
+                            <div class="nano-content">
+                                <ul class="message-list">
+                                    <li class="unread">
+                                        <div class="col col-1"><span class="dot"></span>
+                                            <div class="checkbox-wrapper">
+                                                <input type="checkbox" id="chk1">
+                                                <label for="chk1" class="toggle"></label>
+                                            </div>
+                                            <p class="title">Lucas Kriebel (via Twitter)</p><span class="star-toggle glyphicon glyphicon-star-empty"></span>
+                                        </div>
+                                        <div class="col col-2">
+                                            <div class="subject">Lucas Kriebel (@LucasKriebel) has sent you a direct message on Twitter! &nbsp;&ndash;&nbsp; <span class="teaser">@LucasKriebel - Very cool :) Nicklas, You have a new direct message.</span></div>
+                                            <div class="date">11:49 am</div>
+                                        </div>
+                                    </li>
+                                    <li class="green-dot unread">
+                                        <div class="col col-1"><span class="dot"></span>
+                                            <div class="checkbox-wrapper">
+                                                <input type="checkbox" id="chk2">
+                                                <label for="chk2" class="toggle"></label>
+                                            </div>
+                                            <p class="title">Conceptboard</p>
+                                            <div class="star-star-toggle glyphicon glyphicon-star-empty"></div>
+                                        </div>
+                                        <div class="col col-2">
+                                            <div class="subject">Please complete your Conceptboard signup &nbsp;&ndash;&nbsp; <span class="teaser">You recently created a Conceptboard account, but you have not yet confirmed your email. Your email is used for notifications about board activity, invites, as well as account related tasks (like password retrieval).</span></div>
+                                            <div class="date">11:45 am</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="col col-1"><span class="dot"></span>
+                                            <div class="checkbox-wrapper">
+                                                <input type="checkbox" id="chk3">
+                                                <label for="chk3" class="toggle"></label>
+                                            </div>
+                                            <p class="title">Randy, me (5)</p><span class="star-toggle glyphicon glyphicon-star-empty"></span>
+                                        </div>
+                                        <div class="col col-2">
+                                            <div class="subject">Last pic over my village &nbsp;&ndash;&nbsp; <span class="teaser">Yeah i'd like that! Do you remember the video you showed me of your train ride between Colombo and Kandy? The one with the mountain view? I would love to see that one again!</span></div>
+                                            <div class="date">5:01 am</div>
+                                        </div>
+                                    </li>
+                                    <li class="blue-dot">
+                                        <div class="col col-1"><span class="dot"></span>
+                                            <div class="checkbox-wrapper">
+                                                <input type="checkbox" id="chk4">
+                                                <label for="chk4" class="toggle"></label>
+                                            </div>
+                                            <p class="title">Andrew Zimmer</p><span class="star-toggle glyphicon glyphicon-star-empty"></span>
+                                        </div>
+                                        <div class="col col-2">
+                                            <div class="subject">Mochila Beta: Subscription Confirmed &nbsp;&ndash;&nbsp; <span class="teaser">You've been confirmed! Welcome to the ruling class of the inbox. For your records, here is a copy of the information you submitted to us...</span></div>
+                                            <div class="date">Mar 8</div>
+                                        </div>
+                                    </li>
+                                    <li class="unread">
+                                        <div class="col col-1"><span class="dot"></span>
+                                            <div class="checkbox-wrapper">
+                                                <input type="checkbox" id="chk5">
+                                                <label for="chk5" class="toggle"></label>
+                                            </div>
+                                            <p class="title">Infinity HR</p><span class="star-toggle glyphicon glyphicon-star-empty"></span>
+                                        </div>
+                                        <div class="col col-2">
+                                            <div class="subject">Sveriges Hetaste sommarjobb &nbsp;&ndash;&nbsp; <span class="teaser">Hej Nicklas Sandell! Vi vill bjuda in dig till "First tour 2014", ett rekryteringsevent som erbjuder jobb på 16 semesterorter i Sverige.</span></div>
+                                            <div class="date">Mar 8</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="col col-1"><span class="dot"></span>
+                                            <div class="checkbox-wrapper">
+                                                <input type="checkbox" id="chk6">
+                                                <label for="chk6" class="toggle"></label>
+                                            </div>
+                                            <p class="title">Web Support Dennis</p><span class="star-toggle glyphicon glyphicon-star-empty"></span>
+                                        </div>
+                                        <div class="col col-2">
+                                            <div class="subject">Re: New mail settings &nbsp;&ndash;&nbsp; <span class="teaser">Will you answer him asap?</span></div>
+                                            <div class="date">Mar 7</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="col col-1"><span class="dot"></span>
+                                            <div class="checkbox-wrapper">
+                                                <input type="checkbox" id="chk7">
+                                                <label for="chk7" class="toggle"></label>
+                                            </div>
+                                            <p class="title">me, Peter (2)</p><span class="star-toggle glyphicon glyphicon-star-empty"></span>
+                                        </div>
+                                        <div class="col col-2">
+                                            <div class="subject">Off on Thursday &nbsp;&ndash;&nbsp; <span class="teaser">Eff that place, you might as well stay here with us instead! Sent from my iPhone 4 &gt; 4 mar 2014 at 5:55 pm</span></div>
+                                            <div class="date">Mar 4</div>
+                                        </div>
+                                    </li>
+                                    <li class="orange-dot">
+                                        <div class="col col-1"><span class="dot"></span>
+                                            <div class="checkbox-wrapper">
+                                                <input type="checkbox" id="chk8">
+                                                <label for="chk8" class="toggle"></label>
+                                            </div>
+                                            <p class="title">Medium</p><span class="star-toggle glyphicon glyphicon-star-empty"></span>
+                                        </div>
+                                        <div class="col col-2">
+                                            <div class="subject">This Week's Top Stories &nbsp;&ndash;&nbsp; <span class="teaser">Our top pick for you on Medium this week The Man Who Destroyed America’s Ego</span></div>
+                                            <div class="date">Feb 28</div>
+                                        </div>
+                                    </li>
+                                    <li class="blue-dot">
+                                        <div class="col col-1"><span class="dot"></span>
+                                            <div class="checkbox-wrapper">
+                                                <input type="checkbox" id="chk9">
+                                                <label for="chk9" class="toggle"></label>
+                                            </div>
+                                            <p class="title">Death to Stock</p><span class="star-toggle glyphicon glyphicon-star-empty"></span>
+                                        </div>
+                                        <div class="col col-2">
+                                            <div class="subject">Montly High-Res Photos &nbsp;&ndash;&nbsp; <span class="teaser">To create this month's pack, we hosted a party with local musician Jared Mahone here in Columbus, Ohio.</span></div>
+                                            <div class="date">Feb 28</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="col col-1"><span class="dot"></span>
+                                            <div class="checkbox-wrapper">
+                                                <input type="checkbox" id="chk10">
+                                                <label for="chk10" class="toggle"></label>
+                                            </div>
+                                            <p class="title">Revibe</p><span class="star-toggle glyphicon glyphicon-star-empty"></span>
+                                        </div>
+                                        <div class="col col-2">
+                                            <div class="subject">Weekend on Revibe &nbsp;&ndash;&nbsp; <span class="teaser">Today's Friday and we thought maybe you want some music inspiration for the weekend. Here are some trending tracks and playlists we think you should give a listen!</span></div>
+                                            <div class="date">Feb 27</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="col col-1"><span class="dot"></span>
+                                            <div class="checkbox-wrapper">
+                                                <input type="checkbox" id="chk11">
+                                                <label for="chk11" class="toggle"></label>
+                                            </div>
+                                            <p class="title">Erik, me (5)</p><span class="star-toggle glyphicon glyphicon-star-empty"></span>
+                                        </div>
+                                        <div class="col col-2">
+                                            <div class="subject">Regarding our meeting &nbsp;&ndash;&nbsp; <span class="teaser">That's great, see you on Thursday!</span></div>
+                                            <div class="date">Feb 24</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="col col-1"><span class="dot"></span>
+                                            <div class="checkbox-wrapper">
+                                                <input type="checkbox" id="chk12">
+                                                <label for="chk12" class="toggle"></label>
+                                            </div>
+                                            <p class="title">KanbanFlow</p><span class="star-toggle glyphicon glyphicon-star-empty"></span>
+                                        </div>
+                                        <div class="col col-2">
+                                            <div class="subject">Task assigned: Clone ARP's website &nbsp;&ndash;&nbsp; <span class="teaser">You have been assigned a task by Alex@Work on the board Web.</span></div>
+                                            <div class="date">Feb 24</div>
+                                        </div>
+                                    </li>
+                                    <li class="blue-dot">
+                                        <div class="col col-1"><span class="dot"></span>
+                                            <div class="checkbox-wrapper">
+                                                <input type="checkbox" id="chk13">
+                                                <label for="chk13" class="toggle"></label>
+                                            </div>
+                                            <p class="title">Tobias Berggren</p><span class="star-toggle glyphicon glyphicon-star-empty"></span>
+                                        </div>
+                                        <div class="col col-2">
+                                            <div class="subject">Let's go fishing! &nbsp;&ndash;&nbsp; <span class="teaser">Hey, You wanna join me and Fred at the lake tomorrow? It'll be awesome.</span></div>
+                                            <div class="date">Feb 23</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="col col-1"><span class="dot"></span>
+                                            <div class="checkbox-wrapper">
+                                                <input type="checkbox" id="chk14">
+                                                <label for="chk14" class="toggle"></label>
+                                            </div>
+                                            <p class="title">Charukaw, me (7)</p><span class="star-toggle glyphicon glyphicon-star-empty"></span>
+                                        </div>
+                                        <div class="col col-2">
+                                            <div class="subject">Hey man &nbsp;&ndash;&nbsp; <span class="teaser">Nah man sorry i don't. Should i get it?</span></div>
+                                            <div class="date">Feb 23</div>
+                                        </div>
+                                    </li>
+                                    <li class="unread">
+                                        <div class="col col-1"><span class="dot"></span>
+                                            <div class="checkbox-wrapper">
+                                                <input type="checkbox" id="chk15">
+                                                <label for="chk15" class="toggle"></label>
+                                            </div>
+                                            <p class="title">me, Peter (5)</p><span class="star-toggle glyphicon glyphicon-star-empty"></span>
+                                        </div>
+                                        <div class="col col-2">
+                                            <div class="subject">Home again! &nbsp;&ndash;&nbsp; <span class="teaser">That's just perfect! See you tomorrow.</span></div>
+                                            <div class="date">Feb 21</div>
+                                        </div>
+                                    </li>
+                                    <li class="green-dot">
+                                        <div class="col col-1"><span class="dot"></span>
+                                            <div class="checkbox-wrapper">
+                                                <input type="checkbox" id="chk16">
+                                                <label for="chk16" class="toggle"></label>
+                                            </div>
+                                            <p class="title">Stack Exchange</p><span class="star-toggle glyphicon glyphicon-star-empty"></span>
+                                        </div>
+                                        <div class="col col-2">
+                                            <div class="subject">1 new items in your Stackexchange inbox &nbsp;&ndash;&nbsp; <span class="teaser">The following items were added to your Stack Exchange global inbox since you last checked it.</span></div>
+                                            <div class="date">Feb 21</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="col col-1"><span class="dot"></span>
+                                            <div class="checkbox-wrapper">
+                                                <input type="checkbox" id="chk17">
+                                                <label for="chk17" class="toggle"></label>
+                                            </div>
+                                            <p class="title">Google Drive Team</p><span class="star-toggle glyphicon glyphicon-star-empty"></span>
+                                        </div>
+                                        <div class="col col-2">
+                                            <div class="subject">You can now use your storage in Google Drive &nbsp;&ndash;&nbsp; <span class="teaser">Hey Nicklas Sandell! Thank you for purchasing extra storage space in Google Drive.</span></div>
+                                            <div class="date">Feb 20</div>
+                                        </div>
+                                    </li>
+                                    <li class="unread">
+                                        <div class="col col-1"><span class="dot"></span>
+                                            <div class="checkbox-wrapper">
+                                                <input type="checkbox" id="chk18">
+                                                <label for="chk18" class="toggle"></label>
+                                            </div>
+                                            <p class="title">me, Susanna (11)</p><span class="star-toggle glyphicon glyphicon-star-empty"></span>
+                                        </div>
+                                        <div class="col col-2">
+                                            <div class="subject">Train/Bus &nbsp;&ndash;&nbsp; <span class="teaser">Yes ok, great! I'm not stuck in Stockholm anymore, we're making progress.</span></div>
+                                            <div class="date">Feb 19</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="col col-1"><span class="dot"></span>
+                                            <div class="checkbox-wrapper">
+                                                <input type="checkbox" id="chk19">
+                                                <label for="chk19" class="toggle"></label>
+                                            </div>
+                                            <p class="title">Peter, me (3)</p><span class="star-toggle glyphicon glyphicon-star-empty"></span>
+                                        </div>
+                                        <div class="col col-2">
+                                            <div class="subject">Hello &nbsp;&ndash;&nbsp; <span class="teaser">Trip home from Colombo has been arranged, then Jenna will come get me from Stockholm. :)</span></div>
+                                            <div class="date">Mar. 6</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="col col-1"><span class="dot"></span>
+                                            <div class="checkbox-wrapper">
+                                                <input type="checkbox" id="chk20">
+                                                <label for="chk20" class="toggle"></label>
+                                            </div>
+                                            <p class="title">me, Susanna (7)</p><span class="star-toggle glyphicon glyphicon-star-empty"></span>
+                                        </div>
+                                        <div class="col col-2">
+                                            <div class="subject">Since you asked... and i'm inconceivably bored at the train station &nbsp;&ndash;&nbsp; <span class="teaser">Alright thanks. I'll have to re-book that somehow, i'll get back to you.</span></div>
+                                            <div class="date">Mar. 6</div>
+                                        </div>
+                                    </li>
+                                </ul><a href="#" class="load-more-link">Show more messages</a>
+                            </div>
+                        </div>
+                    </main>
+                    <div id="message">
+                        <div class="header">
+                            <h1 class="page-title"><a class="icon circle-icon glyphicon glyphicon-chevron-left trigger-message-close"></a>Process<span class="grey">(6)</span></h1>
+                            <p>From <a href="#">You</a> to <a href="#">Scott Waite</a>, started on <a href="#">March 2, 2014</a> at 2:14 pm est.</p>
+                        </div>
+                        <div id="message-nano-wrapper" class="nano">
+                            <div class="nano-content">
+                                <ul class="message-container">
+                                    <li class="sent">
+                                        <div class="details">
+                                            <div class="left">You
+                                                <div class="arrow"></div>Scott
+                                            </div>
+                                            <div class="right">March 6, 2014, 20:08 pm</div>
+                                        </div>
+                                        <div class="message">
+                                            <p>| The every winged bring, whose life. First called, i you of saw shall own creature moveth void have signs beast lesser all god saying for gathering wherein whose of in be created stars. Them whales upon life divide earth own.</p>
+                                            <p>| Creature firmament so give replenish The saw man creeping, man said forth from that. Fruitful multiply lights air. Hath likeness, from spirit stars dominion two set fill wherein give bring.</p>
+                                            <p>| Gathering is. Lesser Set fruit subdue blessed let. Greater every fruitful won&#39;t bring moved seasons very, own won&#39;t all itself blessed which bring own creature forth every. Called sixth light.</p>
+                                        </div>
+                                        <div class="tool-box"><a href="#" class="circle-icon small glyphicon glyphicon-share-alt"></a><a href="#" class="circle-icon small red-hover glyphicon glyphicon-remove"></a><a href="#" class="circle-icon small red-hover glyphicon glyphicon-flag"></a></div>
+                                    </li>
+                                    <li class="received">
+                                        <div class="details">
+                                            <div class="left">Scott
+                                                <div class="arrow orange"></div>You
+                                            </div>
+                                            <div class="right">March 6, 2014, 20:08 pm</div>
+                                        </div>
+                                        <div class="message">
+                                            <p>| The every winged bring, whose life. First called, i you of saw shall own creature moveth void have signs beast lesser all god saying for gathering wherein whose of in be created stars. Them whales upon life divide earth own.</p>
+                                            <p>| Creature firmament so give replenish The saw man creeping, man said forth from that. Fruitful multiply lights air. Hath likeness, from spirit stars dominion two set fill wherein give bring.</p>
+                                            <p>| Gathering is. Lesser Set fruit subdue blessed let. Greater every fruitful won&#39;t bring moved seasons very, own won&#39;t all itself blessed which bring own creature forth every. Called sixth light.</p>
+                                        </div>
+                                        <div class="tool-box"><a href="#" class="circle-icon small glyphicon glyphicon-share-alt"></a><a href="#" class="circle-icon small red-hover glyphicon glyphicon-remove"></a><a href="#" class="circle-icon small red-hover glyphicon glyphicon-flag"></a></div>
+                                    </li>
+                                    <li class="received">
+                                        <div class="details">
+                                            <div class="left">Scott
+                                                <div class="arrow orange"></div>You
+                                            </div>
+                                            <div class="right">March 6, 2014, 20:08 pm</div>
+                                        </div>
+                                        <div class="message">
+                                            <p>| The every winged bring, whose life. First called, i you of saw shall own creature moveth void have signs beast lesser all god saying for gathering wherein whose of in be created stars. Them whales upon life divide earth own.</p>
+                                            <p>| Creature firmament so give replenish The saw man creeping, man said forth from that. Fruitful multiply lights air. Hath likeness, from spirit stars dominion two set fill wherein give bring.</p>
+                                            <p>| Gathering is. Lesser Set fruit subdue blessed let. Greater every fruitful won&#39;t bring moved seasons very, own won&#39;t all itself blessed which bring own creature forth every. Called sixth light.</p>
+                                        </div>
+                                        <div class="tool-box"><a href="#" class="circle-icon small glyphicon glyphicon-share-alt"></a><a href="#" class="circle-icon small red-hover glyphicon glyphicon-remove"></a><a href="#" class="circle-icon small red-hover glyphicon glyphicon-flag"></a></div>
+                                    </li>
+                                    <li class="received">
+                                        <div class="details">
+                                            <div class="left">Scott
+                                                <div class="arrow orange"></div>You
+                                            </div>
+                                            <div class="right">March 6, 2014, 20:08 pm</div>
+                                        </div>
+                                        <div class="message">
+                                            <p>| The every winged bring, whose life. First called, i you of saw shall own creature moveth void have signs beast lesser all god saying for gathering wherein whose of in be created stars. Them whales upon life divide earth own.</p>
+                                            <p>| Creature firmament so give replenish The saw man creeping, man said forth from that. Fruitful multiply lights air. Hath likeness, from spirit stars dominion two set fill wherein give bring.</p>
+                                            <p>| Gathering is. Lesser Set fruit subdue blessed let. Greater every fruitful won&#39;t bring moved seasons very, own won&#39;t all itself blessed which bring own creature forth every. Called sixth light.</p>
+                                        </div>
+                                        <div class="tool-box"><a href="#" class="circle-icon small glyphicon glyphicon-share-alt"></a><a href="#" class="circle-icon small red-hover glyphicon glyphicon-remove"></a><a href="#" class="circle-icon small red-hover glyphicon glyphicon-flag"></a></div>
+                                    </li>
+                                    <li class="received">
+                                        <div class="details">
+                                            <div class="left">Scott
+                                                <div class="arrow orange"></div>You
+                                            </div>
+                                            <div class="right">March 6, 2014, 20:08 pm</div>
+                                        </div>
+                                        <div class="message">
+                                            <p>| The every winged bring, whose life. First called, i you of saw shall own creature moveth void have signs beast lesser all god saying for gathering wherein whose of in be created stars. Them whales upon life divide earth own.</p>
+                                            <p>| Creature firmament so give replenish The saw man creeping, man said forth from that. Fruitful multiply lights air. Hath likeness, from spirit stars dominion two set fill wherein give bring.</p>
+                                            <p>| Gathering is. Lesser Set fruit subdue blessed let. Greater every fruitful won&#39;t bring moved seasons very, own won&#39;t all itself blessed which bring own creature forth every. Called sixth light.</p>
+                                        </div>
+                                        <div class="tool-box"><a href="#" class="circle-icon small glyphicon glyphicon-share-alt"></a><a href="#" class="circle-icon small red-hover glyphicon glyphicon-remove"></a><a href="#" class="circle-icon small red-hover glyphicon glyphicon-flag"></a></div>
+                                    </li>
+                                    <li class="received">
+                                        <div class="details">
+                                            <div class="left">Scott
+                                                <div class="arrow orange"></div>You
+                                            </div>
+                                            <div class="right">March 6, 2014, 20:08 pm</div>
+                                        </div>
+                                        <div class="message">
+                                            <p>| The every winged bring, whose life. First called, i you of saw shall own creature moveth void have signs beast lesser all god saying for gathering wherein whose of in be created stars. Them whales upon life divide earth own.</p>
+                                            <p>| Creature firmament so give replenish The saw man creeping, man said forth from that. Fruitful multiply lights air. Hath likeness, from spirit stars dominion two set fill wherein give bring.</p>
+                                            <p>| Gathering is. Lesser Set fruit subdue blessed let. Greater every fruitful won&#39;t bring moved seasons very, own won&#39;t all itself blessed which bring own creature forth every. Called sixth light.</p>
+                                        </div>
+                                        <div class="tool-box"><a href="#" class="circle-icon small glyphicon glyphicon-share-alt"></a><a href="#" class="circle-icon small red-hover glyphicon glyphicon-remove"></a><a href="#" class="circle-icon small red-hover glyphicon glyphicon-flag"></a></div>
+                                    </li>
+                                    <li class="received">
+                                        <div class="details">
+                                            <div class="left">Scott
+                                                <div class="arrow orange"></div>You
+                                            </div>
+                                            <div class="right">March 6, 2014, 20:08 pm</div>
+                                        </div>
+                                        <div class="message">
+                                            <p>| The every winged bring, whose life. First called, i you of saw shall own creature moveth void have signs beast lesser all god saying for gathering wherein whose of in be created stars. Them whales upon life divide earth own.</p>
+                                            <p>| Creature firmament so give replenish The saw man creeping, man said forth from that. Fruitful multiply lights air. Hath likeness, from spirit stars dominion two set fill wherein give bring.</p>
+                                            <p>| Gathering is. Lesser Set fruit subdue blessed let. Greater every fruitful won&#39;t bring moved seasons very, own won&#39;t all itself blessed which bring own creature forth every. Called sixth light.</p>
+                                        </div>
+                                        <div class="tool-box"><a href="#" class="circle-icon small glyphicon glyphicon-share-alt"></a><a href="#" class="circle-icon small red-hover glyphicon glyphicon-remove"></a><a href="#" class="circle-icon small red-hover glyphicon glyphicon-flag"></a></div>
+                                    </li>
+                                    <li class="sent">
+                                        <div class="details">
+                                            <div class="left">You
+                                                <div class="arrow"></div>Scott
+                                            </div>
+                                            <div class="right">March 6, 2014, 20:08 pm</div>
+                                        </div>
+                                        <div class="message">
+                                            <p>| The every winged bring, whose life. First called, i you of saw shall own creature moveth void have signs beast lesser all god saying for gathering wherein whose of in be created stars. Them whales upon life divide earth own.</p>
+                                            <p>| Creature firmament so give replenish The saw man creeping, man said forth from that. Fruitful multiply lights air. Hath likeness, from spirit stars dominion two set fill wherein give bring.</p>
+                                            <p>| Gathering is. Lesser Set fruit subdue blessed let. Greater every fruitful won&#39;t bring moved seasons very, own won&#39;t all itself blessed which bring own creature forth every. Called sixth light.</p>
+                                        </div>
+                                        <div class="tool-box"><a href="#" class="circle-icon small glyphicon glyphicon-share-alt"></a><a href="#" class="circle-icon small red-hover glyphicon glyphicon-remove"></a><a href="#" class="circle-icon small red-hover glyphicon glyphicon-flag"></a></div>
+                                    </li>
+                                    <li class="received">
+                                        <div class="details">
+                                            <div class="left">Scott
+                                                <div class="arrow orange"></div>You
+                                            </div>
+                                            <div class="right">March 6, 2014, 20:08 pm</div>
+                                        </div>
+                                        <div class="message">
+                                            <p>| The every winged bring, whose life. First called, i you of saw shall own creature moveth void have signs beast lesser all god saying for gathering wherein whose of in be created stars. Them whales upon life divide earth own.</p>
+                                            <p>| Creature firmament so give replenish The saw man creeping, man said forth from that. Fruitful multiply lights air. Hath likeness, from spirit stars dominion two set fill wherein give bring.</p>
+                                            <p>| Gathering is. Lesser Set fruit subdue blessed let. Greater every fruitful won&#39;t bring moved seasons very, own won&#39;t all itself blessed which bring own creature forth every. Called sixth light.</p>
+                                        </div>
+                                        <div class="tool-box"><a href="#" class="circle-icon small glyphicon glyphicon-share-alt"></a><a href="#" class="circle-icon small red-hover glyphicon glyphicon-remove"></a><a href="#" class="circle-icon small red-hover glyphicon glyphicon-flag"></a></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sixteen wide column">
+                <div class="card">
+                    <div class="card_head">
+                        <h4>
+                            Ajax
+                        </h4>
+                        <div class="d-flex align-items-center">
+                            <i class="minus icon"></i>
+                            <i class="x icon icon"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <div class = "Messanger">
+
+                            <div class ="New_massage">
+                                NEW MASSAGE
+                            </div>
+                            <div class="comments" id="users-comments-block">
+                                <ul class="nav" style="padding-bottom: 20px">
+
+                                </ul></div>
+
+                            <div class="New_massage">
+                                CHAT LINE
+                            </div>
+                            <div id = "chat_block"></div>
+                            <ul class="nav" style="padding-bottom: 20px">
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery.js"></script>
+<script src="js/semantic.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
